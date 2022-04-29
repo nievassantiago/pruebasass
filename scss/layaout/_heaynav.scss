@@ -1,0 +1,51 @@
+@import "../utilities/variables";
+//el header
+/*el header*/
+.cabeza{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: top;
+    &:hover{
+    background-image: url(/img/beasim.jpg);
+    transform: rotate(2deg);
+    transition-duration: 1.5s;
+    transition-delay: 0.3s; }
+       h1 {
+        height: 3.5rem;
+        font-size:$size-2rem;
+        margin: 1px 0px 2rem 0px;
+        color: $color-letra;
+         }
+}
+
+//terminó el header
+/*terminó el header*/
+/////////////////////
+/////////////////////
+//empieza el menu
+/* empieza el menu*/
+
+.menu {
+    flex-direction: row;
+    overflow: hidden;
+    padding: 1rem; 
+    .lista {
+        list-style: none;
+        display:block;
+       @include long (auto, auto)
+        li {
+             a {
+                 text-decoration:none;
+                 color:$color-letra;
+                 &:hover{
+                    background-color: rgb(101, 30, 101);
+                 }
+             }
+        
+        }
+    }       
+    @include flex;
+  }
+
+ 

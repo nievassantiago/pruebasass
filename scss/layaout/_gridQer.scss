@@ -1,0 +1,53 @@
+/*grid estructura*/
+.cabeza {
+    grid-area: cabeza;
+  }
+  .menu {
+    grid-area: menu;
+  }
+  .sidebar {
+    grid-area: sidebar; 
+  }
+  .main {
+    grid-area: main;
+  }
+  .footer {
+    grid-area: footer;
+  }
+  
+  .grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template:
+      "cabeza"  100px
+      "menu"   150px
+      "sidebar" 150px
+      "main"    auto
+      "footer"  100px;
+  }
+  
+@media (min-width: 700px) {
+  .grid-container {
+    grid-template:
+      "cabeza cabeza" 100px
+      "menu  menu"     150px
+      "sidebar main"   auto
+      "footer footer" 100px /
+      200px    auto;
+  }
+  .videoHomero{
+    @include long (140px,400px);
+    overflow: hidden;}
+}
+
+@media (min-width: 900px) {
+  .grid-container {
+    grid-template:
+      "cabeza cabeza cabeza"  100px
+      "menu   main   sidebar" auto
+      "footer  footer footer"  100px /
+      200px    auto   200px;
+  }
+}
+ 
+ 

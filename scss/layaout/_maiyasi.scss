@@ -1,0 +1,46 @@
+/* vamos con el main*/
+//vamos con el main
+main{
+    @include flex;
+    color: $color-letra;
+     h2{padding: 2rem;
+        @include boro;  
+    }
+    h3{
+       padding: 2rem;
+      @include boro;
+    }
+     .imgsHomero{
+         @include flex;
+          img{
+            @include flex;
+            @include long (350px,350px);
+        }    
+     }
+     
+  .padreImgs{
+    
+    display: flex;
+    flex-flow: wrap;
+    justify-content:space-evenly;
+   // flex-direction: column;
+    
+     div{
+        margin: 10px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 25%;
+        img{
+            width: 12rem;
+            height:140px;
+            margin: 25px;
+            padding: 2px;
+            @include circulo(5px black solid,50% 50%,50% 50%,50% 50%,50% 50%)
+        }
+
+     }
+
+            
+        }
+ 
+    
+}

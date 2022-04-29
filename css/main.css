@@ -1,0 +1,145 @@
+@charset "UTF-8";
+/* comentario css*/
+/*el header*/
+.cabeza {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  align-items: top; }
+  .cabeza:hover {
+    background-image: url(/img/beasim.jpg);
+    transform: rotate(2deg);
+    transition-duration: 1.5s;
+    transition-delay: 0.3s; }
+  .cabeza h1 {
+    height: 3.5rem;
+    font-size: 32px;
+    margin: 1px 0px 2rem 0px;
+    color: #C53CA1; }
+
+/*terminó el header*/
+/* empieza el menu*/
+.menu {
+  flex-direction: row;
+  overflow: hidden;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center; }
+  .menu .lista {
+    list-style: none;
+    display: block;
+    width: auto;
+    height: auto; }
+    .menu .lista li a {
+      text-decoration: none;
+      color: #C53CA1; }
+      .menu .lista li a:hover {
+        background-color: #651e65; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+/*grid estructura*/
+.cabeza {
+  grid-area: cabeza; }
+
+.menu {
+  grid-area: menu; }
+
+.sidebar {
+  grid-area: sidebar; }
+
+.main {
+  grid-area: main; }
+
+.footer {
+  grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  grid-template: "cabeza"  100px "menu"   150px "sidebar" 150px "main"    auto "footer"  100px; }
+
+@media (min-width: 700px) {
+  .grid-container {
+    grid-template: "cabeza cabeza" 100px "menu  menu"     150px "sidebar main"   auto "footer footer" 100px / 200px    auto; }
+  .videoHomero {
+    width: 140px;
+    height: 400px;
+    overflow: hidden; } }
+
+@media (min-width: 900px) {
+  .grid-container {
+    grid-template: "cabeza cabeza cabeza"  100px "menu   main   sidebar" auto "footer  footer footer"  100px / 200px    auto   200px; } }
+
+/* vamos con el main*/
+main {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  color: #C53CA1; }
+  main h2 {
+    padding: 2rem; }
+    main h2:hover {
+      color: white !important;
+      box-shadow: 0 4px 16px #ac318d;
+      transition: all 0.2s ease; }
+  main h3 {
+    padding: 2rem; }
+    main h3:hover {
+      color: white !important;
+      box-shadow: 0 4px 16px #ac318d;
+      transition: all 0.2s ease; }
+  main .imgsHomero {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center; }
+    main .imgsHomero img {
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+      width: 350px;
+      height: 350px; }
+  main .padreImgs {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly; }
+    main .padreImgs div {
+      margin: 10px;
+      border-top-left-radius: 50%;
+      border-top-right-radius: 25%; }
+      main .padreImgs div img {
+        width: 12rem;
+        height: 140px;
+        margin: 25px;
+        padding: 2px;
+        border: 5px black solid;
+        border-top-left-radius: 50% 50%;
+        border-top-right-radius: 50% 50%;
+        border-bottom-right-radius: 50% 50%;
+        border-bottom-left-radius: 50% 50%; }
+
+.grid-container > * {
+  color: #C53CA1;
+  box-shadow: -1px 1px 7px 0px rgba(255, 250, 250, 0.75);
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center; }
+
+@font-face {
+  font-family: Simpsonfont;
+  src: url(fuente/Simpsonfont.ttf); }
+
+body {
+  min-height: 100%;
+  font-family: Simpsonfont;
+  src: url(fuente/Simpsonfont.ttf);
+  font-size: 1.3rem;
+  background-color: #010101; }

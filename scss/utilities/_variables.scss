@@ -1,0 +1,30 @@
+//variables
+$color-letra:#C53CA1;
+$size-2rem: 32px;
+
+//mixinessss
+@mixin long ($width, $height) {
+    width:$width;
+    height:$height;
+}
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+@mixin boro{
+   &:hover{
+    color: rgba(255, 255, 255, 1) !important;
+    box-shadow: 0 4px 16px rgb(172, 49, 141);
+    transition: all 0.2s ease;
+  }
+   }
+
+@mixin circulo ($border , $border-top-left-radius,$border-top-right-radius,$border-bottom-right-radius,$border-bottom-left-radius){
+   border:5px black solid;
+   border-top-left-radius: 50% 50%;
+   border-top-right-radius: 50% 50%;
+   border-bottom-right-radius: 50% 50%;
+   border-bottom-left-radius: 50% 50%;}
+//termina mixxenes
