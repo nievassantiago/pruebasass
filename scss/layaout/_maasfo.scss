@@ -1,0 +1,72 @@
+/* vamos con el main*/
+//vamos con el main
+main{
+    @include flex;
+    color: $color-letra;
+     h2{padding: 2rem;
+        @include boro;  
+    }
+    h3{
+       padding: 2rem;
+      @include boro;
+    }
+     .imgsHomero{
+         @include flex;
+          img{
+            @include flex;
+            @include long (350px,350px);
+        }    
+     }
+     
+  .padreImgs{
+    
+    display: flex;
+    flex-flow: wrap;
+    justify-content:space-evenly;
+   
+    
+     div{
+        margin: 10px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 25%;
+          img{
+            width: 12rem;
+            height:140px;
+            margin: 25px;
+            padding: 2px;
+            @include circulo(5px black solid,50% 50%,50% 50%,50% 50%,50% 50%);
+            @include boro;
+            &:hover{
+                transform: scale(1.5); 
+                  }
+            }
+        }
+    }
+    .img2{ 
+     @include flex;
+     @include long(80%,380px);
+     padding:$size-2rem;
+    }
+}
+
+/*termina main*/
+//termina main
+
+//empieza el footer
+/* empieza el footer*/
+
+.footer{
+  &:hover{
+    background-image: url(/img/beasim3.jpg);
+    transform: rotate(2deg);
+    transition-duration: 1.5s;
+    transition-delay: 0.8s; }
+  display: flex;
+  justify-content:space-evenly;
+  img{@include boro;
+    &:hover{
+      background-color: aliceblue;
+      transform: scale(1.5);
+    }
+  }
+}

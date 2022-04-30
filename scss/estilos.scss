@@ -1,10 +1,10 @@
 /* comentario css*/
 //comentario en sass
 @import "utilities/variables";
-@import "layaout/heaynav";
+@import "layaout/heanav";
 @import "layaout/reset";
 @import "layaout/gridQer";
-@import "layaout/maiyasi";
+@import "layaout/maasfo";
 
 .grid-container > * {
   color: $color-letra;
@@ -24,4 +24,63 @@ body {
   src: url(fuente/Simpsonfont.ttf);
   font-size: 1.3rem;
   background-color:rgb(1, 1, 1);
+}
+
+/*BOOTSTRAP*/
+//APROVECHO ESTA PARTE PARA SEPARAR BOOTSTRAP
+/*REMERAS DE BART BOOTSTRAP*/
+
+.container-fluid{
+ header{
+   margin: 13px;
+   &:hover{ transform: rotate(2deg);
+    transition-duration: 1.5s;
+    transition-delay: 0.1s;
+    background-image: url(/img/beasim.jpg);
+  }
+  h1{
+    color: $color-letra;
+  }
+ }
+ nav{
+   margin: 13px;
+   .navbar-brand{
+    color: $color-letra;
+     &:hover{
+      transform: scale(1.1);
+      background-color: #d49fdefd;
+     }
+   }
+   .nav-link{
+    &:hover{
+      transform: scale(1.1);
+      background-color:#9c19828a;
+     }
+   }
+ }
+ .row{
+   .col-6{
+     padding: 15;
+     img{
+       width:450px;
+     }
+   }
+ }
+ .container{
+   padding:$size-2rem;
+    color:$color-letra;
+   .col-2{
+    margin: 20px;
+    padding: 1rem;
+    background-color: azure;
+     .card-body{
+      transform: translateY(-15px);
+      box-shadow: 0 12px 16px rgba(0,0,0,5);
+     }
+     .card-img-top{
+      @include bcard;
+    }
+   }
+ }
+ 
 }
