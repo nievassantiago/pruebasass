@@ -1,6 +1,26 @@
 /* vamos con el main*/
 //vamos con el main
 main{
+  display: flex;
+  flex-flow: wrap;
+  justify-content:space-evenly;
+  .videoLobo1{
+    padding: 3rem;
+  }
+  span{
+    padding: 3rem;
+  }
+ form{
+     fieldset{
+       .botonForm{
+         select{
+           @include formBott;
+         }
+       }input{
+          @include formBott;
+       }
+     }
+  }
     @include flex;
     color: $color-letra;
      h2{padding: 2rem;

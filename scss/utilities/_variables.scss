@@ -34,4 +34,12 @@ $size-2rem: 32px;
    border-top-right-radius: 50% 50%;
    border-bottom-right-radius: 50% 50%;
    border-bottom-left-radius: 50% 50%;}
+@mixin formBott {
+    &:hover{
+   box-shadow: inset 0 0 20px rgba(222, 24, 216, 0.866), 0 0 20px rgba(49, 138, 172, 0.4);
+   outline-color: rgba(49, 138, 172, 0);
+   outline-offset: 80px;
+   text-shadow: 1px 1px 6px #fff;
+    }
+}
 //termina mixxenes

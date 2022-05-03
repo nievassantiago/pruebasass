@@ -59,12 +59,21 @@ body {
    }
  }
  .row{
-   .col-6{
-     padding: 15;
+      .col-6{
+     padding: 15px;
      img{
        width:450px;
      }
    }
+ }
+ .naranja{
+   margin:$size-2rem;
+   font-size: $size-2rem;
+   color:rgb(241, 237, 14);
+   padding: $size-2rem;
+   
+   
+   
  }
  .container{
    padding:$size-2rem;
@@ -83,4 +92,19 @@ body {
    }
  }
  
+}
+.pie-boots{
+  &:hover{
+    background-image: url(/img/beasim3.jpg);
+    transform: rotate(2deg);
+    transition-duration: 1.5s;
+    transition-delay: 0.8s; }
+  display: flex;
+  justify-content:space-evenly;
+  img{@include boro;
+    &:hover{
+      background-color: aliceblue;
+      transform: scale(1.5);
+    }
+  }
 }
