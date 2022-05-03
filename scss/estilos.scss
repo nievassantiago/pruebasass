@@ -8,7 +8,7 @@
 
 .grid-container > * {
   color: $color-letra;
-  box-shadow: -1px 1px 7px 0px rgba(255, 250, 250, 0.75);
+  box-shadow: -1px 1px 7px 0px rgba(27, 21, 21, 0.75);
   border-radius: 4px;
   padding: 10px;
   text-align: center;
@@ -23,7 +23,7 @@ body {
   font-family: Simpsonfont;
   src: url(fuente/Simpsonfont.ttf);
   font-size: 1.3rem;
-  background-color:rgb(1, 1, 1);
+  background-color:rgba(1, 1, 1, 0);
 }
 
 /*BOOTSTRAP*/

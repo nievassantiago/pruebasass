@@ -22,7 +22,7 @@ $size-2rem: 32px;
 
 @mixin boro{
    &:hover{
-    color: rgba(255, 255, 255, 1) !important;
+    color: rgb(9, 9, 9) !important;
     box-shadow: 0 4px 16px rgb(172, 49, 141);
     transition: all 0.2s ease;
   }
