@@ -2,6 +2,7 @@
 //el header
 /*el header*/
 .cabeza{
+    background-color:$color-letra;
     display: flex;
     justify-content: center;
     overflow: hidden;
@@ -15,7 +16,7 @@
         height: 3.5rem;
         font-size:$size-2rem;
         margin: 1px 0px 2rem 0px;
-        color: $color-letra;
+        color: black;
          }
 }
 
@@ -26,6 +27,7 @@
 /* empieza el menu*/
 
 .menu {
+    background-color: rgba(241, 241, 82, 0.752);
     flex-direction: row;
     overflow: hidden;
     padding: 1rem; 

@@ -1,3 +1,4 @@
+@import "../utilities/variables";
 /* vamos con el main*/
 //vamos con el main
 main{
@@ -96,6 +97,9 @@ main{
     }
   }
 }
+aside{
+  background-color: rgba(241, 241, 82, 0.752);
+}
 
 /*termina main*/
 //termina main
@@ -104,6 +108,7 @@ main{
 /* empieza el footer*/
 
 .footer{
+  background-color:$color-letra;
   &:hover{
     background-image: url(/img/beasim3.jpg);
     transform: rotate(2deg);
