@@ -1,4 +1,22 @@
-/*grid estructura*/
+//grid estructura
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+.grid-container > * {
+  text-align: center;
+}
+
 .cabeza {
     grid-area: cabeza;
   }
@@ -21,8 +39,8 @@
     grid-template:
       "cabeza"  100px
       "menu"   150px
-      "sidebar" 150px
-      "main"    auto
+      "sidebar" 160px
+      "main"   auto
       "footer"  100px;
   }
   
@@ -31,16 +49,17 @@
     grid-template:
       "cabeza cabeza" 100px
       "menu  menu"     150px
-      "sidebar main"   auto
+      "main  main"   auto
+      "sidebar" 100px
       "footer footer" 100px /
       200px    auto;
   }
   .videoHomero{
     @include long (140px,400px);
     overflow: hidden;}
+    
 }
-
-@media (min-width: 900px) {
+ @media (min-width: 900px) {
   .grid-container {
     grid-template:
       "cabeza cabeza cabeza"  100px
@@ -49,5 +68,4 @@
       200px    auto   200px;
   }
 }
- 
- 
+

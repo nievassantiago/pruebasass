@@ -8,18 +8,14 @@
 
 .grid-container > * {
   color: $color-letra;
-  //box-shadow: -1px 1px 7px 0px rgba(27, 21, 21, 0.75);
- // border-radius: 4px;
- // padding: 10px;
-  text-align: center;
 }
+
 
 @font-face {
   font-family: Simpsonfont;
   src: url(fuente/Simpsonfont.ttf);
 }
 body {
-  @include flex;
   min-height: 100%;
   font-family: Simpsonfont;
   src: url(fuente/Simpsonfont.ttf);

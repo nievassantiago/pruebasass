@@ -98,7 +98,7 @@ main{
   }
 }
 aside{
-  background-color: rgba(241, 241, 82, 0.752);
+  //background-color: rgba(241, 241, 82, 0.752);
 }
 
 /*termina main*/
@@ -108,7 +108,7 @@ aside{
 /* empieza el footer*/
 
 .footer{
-  background-color:$color-letra;
+ // background-color:$color-letra;
   &:hover{
     background-image: url(/img/beasim3.jpg);
     transform: rotate(2deg);

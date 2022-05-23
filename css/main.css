@@ -2,7 +2,6 @@
 /* comentario css*/
 /*el header*/
 .cabeza {
-  background-color: #C53CA1;
   display: flex;
   justify-content: center;
   overflow: hidden;
@@ -21,7 +20,6 @@
 /*terminó el header*/
 /* empieza el menu*/
 .menu {
-  background-color: rgba(241, 241, 82, 0.752);
   flex-direction: row;
   overflow: hidden;
   padding: 1rem; }
@@ -42,7 +40,20 @@
   margin: 0;
   padding: 0; }
 
-/*grid estructura*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  height: 100%; }
+
+body {
+  min-height: 100%; }
+
+.grid-container > * {
+  text-align: center; }
+
 .cabeza {
   grid-area: cabeza; }
 
@@ -61,11 +72,11 @@
 .grid-container {
   display: grid;
   gap: 10px;
-  grid-template: "cabeza"  100px "menu"   150px "sidebar" 150px "main"    auto "footer"  100px; }
+  grid-template: "cabeza"  100px "menu"   150px "sidebar" 160px "main"   auto "footer"  100px; }
 
 @media (min-width: 600px) {
   .grid-container {
-    grid-template: "cabeza cabeza" 100px "menu  menu"     150px "sidebar main"   auto "footer footer" 100px / 200px    auto; }
+    grid-template: "cabeza cabeza" 100px "menu  menu"     150px "main  main"   auto "sidebar" 100px "footer footer" 100px / 200px    auto; }
   .videoHomero {
     width: 140px;
     height: 400px;
@@ -177,13 +188,9 @@ main {
       font-size: 16px;
       font-weight: 300; }
 
-aside {
-  background-color: rgba(241, 241, 82, 0.752); }
-
 /*termina main*/
 /* empieza el footer*/
 .footer {
-  background-color: #C53CA1;
   display: flex;
   justify-content: space-evenly; }
   .footer:hover {
@@ -200,18 +207,13 @@ aside {
     transform: scale(1.5); }
 
 .grid-container > * {
-  color: #C53CA1;
-  text-align: center; }
+  color: #C53CA1; }
 
 @font-face {
   font-family: Simpsonfont;
   src: url(fuente/Simpsonfont.ttf); }
 
 body {
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
   min-height: 100%;
   font-family: Simpsonfont;
   src: url(fuente/Simpsonfont.ttf);
