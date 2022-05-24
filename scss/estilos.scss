@@ -20,7 +20,7 @@ body {
   font-family: Simpsonfont;
   src: url(../fuente/Simpsonfont.ttf);
   font-size: 1.3rem;
-  background-color:rgba(1, 1, 1, 0);
+  padding: 10px;
   
 }
 
@@ -42,6 +42,7 @@ body {
  }
  nav{
    margin: 13px;
+   padding: auto;
    .navbar-brand{
     color: $color-letra;
      &:hover{

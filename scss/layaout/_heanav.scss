@@ -2,7 +2,7 @@
 //el header
 /*el header*/
 .cabeza{
-   
+    padding: auto;
     display: flex;
     justify-content: center;
     overflow: hidden;
@@ -11,12 +11,14 @@
     background-image: url(/img/beasim.jpg);
     transform: rotate(3deg);
     transition-duration: 1.5s;
-    transition-delay: .8s; }
+    transition-delay: .8s; 
+    }
        h1 {
         height: 3.5rem;
         font-size:$size-2rem;
         margin: 1px 0px 2rem 0px;
         color: black;
+        &:hover{color:azure }
          }
 }
 

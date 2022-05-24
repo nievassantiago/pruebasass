@@ -2,6 +2,7 @@
 /* comentario css*/
 /*el header*/
 .cabeza {
+  padding: auto;
   display: flex;
   justify-content: center;
   overflow: hidden;
@@ -16,6 +17,8 @@
     font-size: 32px;
     margin: 1px 0px 2rem 0px;
     color: black; }
+    .cabeza h1:hover {
+      color: azure; }
 
 /*terminó el header*/
 /* empieza el menu*/
@@ -74,20 +77,21 @@ body {
   gap: 10px;
   grid-template: "cabeza"  100px "menu"   150px "sidebar" 100px "main"   auto "footer"  100px; }
 
-@media (min-width: 600px) {
+@media (min-width: 650px) {
   .grid-container {
     grid-template: "cabeza cabeza" 100px "menu  menu"     150px "main  main"   auto "sidebar" 100px "footer footer" 100px / 200px    auto; }
   .videoHomero {
     width: 140px;
-    height: 400px;
+    height: 350px;
     overflow: hidden; } }
 
-@media (min-width: 900px) {
+@media (min-width: 750px) {
   .grid-container {
     grid-template: "cabeza cabeza cabeza"  100px "menu   main   sidebar" auto "footer  footer footer"  100px / 200px    auto   200px; } }
 
 /* vamos con el main*/
 main {
+  padding: 12px;
   display: flex;
   flex-flow: wrap;
   justify-content: space-evenly;
@@ -218,7 +222,7 @@ body {
   font-family: Simpsonfont;
   src: url(../fuente/Simpsonfont.ttf);
   font-size: 1.3rem;
-  background-color: rgba(1, 1, 1, 0); }
+  padding: 10px; }
 
 /*BOOTSTRAP*/
 /*REMERAS DE BART BOOTSTRAP*/
@@ -233,7 +237,8 @@ body {
     color: #C53CA1; }
 
 .container-fluid nav {
-  margin: 13px; }
+  margin: 13px;
+  padding: auto; }
   .container-fluid nav .navbar-brand {
     color: #C53CA1; }
     .container-fluid nav .navbar-brand:hover {
