@@ -72,7 +72,7 @@ body {
 .grid-container {
   display: grid;
   gap: 10px;
-  grid-template: "cabeza"  100px "menu"   150px "sidebar" 160px "main"   auto "footer"  100px; }
+  grid-template: "cabeza"  100px "menu"   150px "sidebar" 100px "main"   auto "footer"  100px; }
 
 @media (min-width: 600px) {
   .grid-container {
@@ -211,12 +211,12 @@ main {
 
 @font-face {
   font-family: Simpsonfont;
-  src: url(fuente/Simpsonfont.ttf); }
+  src: url(../fuente/Simpsonfont.ttf); }
 
 body {
   min-height: 100%;
   font-family: Simpsonfont;
-  src: url(fuente/Simpsonfont.ttf);
+  src: url(../fuente/Simpsonfont.ttf);
   font-size: 1.3rem;
   background-color: rgba(1, 1, 1, 0); }
 

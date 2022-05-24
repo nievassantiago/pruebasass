@@ -39,11 +39,11 @@ body {
     grid-template:
       "cabeza"  100px
       "menu"   150px
-      "sidebar" 160px
+      "sidebar" 100px
       "main"   auto
       "footer"  100px;
   }
-  
+ 
 @media (min-width: 600px) {
   .grid-container {
     grid-template:
